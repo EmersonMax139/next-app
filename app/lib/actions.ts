@@ -7,6 +7,7 @@ import { redirect } from 'next/navigation';
 import { signIn } from '@/auth';
 import { AuthError } from 'next-auth';
 
+// Use zod to define form schema
 const FormSchema = z.object({
   id: z.string(),
   customerId: z.string({
